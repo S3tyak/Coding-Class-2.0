@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Coding-Сlass 2.0</title>
+
+	
+		<style> 
+				.container_for_form {
+					display: flex;
+					flex-direction: row;
+				}
+				input	{
+					width: 200px;
+					margin: 10px;
+				}
+
+		</style>
+	</head>
+<body bgcolor="#C0C0C0">
+	  <p>
+		<img src="image2.jpg"  width="260" align="left" hspace="10" /> 
+		 <font size="6">Третьяков Сергей</font>
+	 </p>
+	 <br>
+	 <br>
+
+	  <p>
+		<b > Опыт работы: </b> <font> 2 года 8 месяцев (инженер дата-центра) </font>
+	 </p>
+<br>
+	 <p>
+		<b > Адрес: </b> <font> г. Челябинск </font>
+	 </p>
+<br>
+	 <p>
+	 	<b>E-mail: </b> <font> tretiakov92@mail.ru </font>
+     </p>
+
+     <br>
+     <br>
+		
+		<h3>Знание языков и программ:</h3>
+
+		<table border="1" width="500" height="100">
+			<tr>
+				<td></td>
+				<td align="center">C#</td>
+				<td align="center">Языки размеки</td>
+				<td align="center">SQL</td>
+				<td align="center">Linux</td>
+				<td align="center">Видео и графические редакторы</td>
+			</tr>
+			<tr>
+				<td>Отличное</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td align="center">&bull;</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Хорошее</td>
+				<td></td>
+				<td align="center">&bull;</td>
+				<td></td>
+				<td></td>
+				<td align="center">&bull;</td>
+			</tr>
+			<tr>
+				<td>Среднее</td>
+				<td align="center">&bull;</td>
+				<td></td>
+				<td align="center">&bull;</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Плохое</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+<br>
+
+<div class="container_for_form">
+<label for="Tel">Телефон</label>
+ <input id="Tel" type="text" placeholder="8(___) ___-____" maxlength="11"> 
+ <label for="Name">Имя</label>
+<input id="Name" type="text" placeholder="Сергей"> 
+
+
+</div>
+<br>
+
+<script type="text/javascript">
+        
+            function showHide(element_id) {
+                if (document.getElementById(element_id)) { 
+                    
+                    var obj = document.getElementById(element_id); 
+                    
+                    if (obj.style.display != "block") { 
+                        obj.style.display = "block"; 
+                    }
+                    else obj.style.display = "none"; 
+                }
+                
+                else alert("Элемент с id: " + element_id + " не найден!"); 
+            }   
+        </script>
+ 
+
+        <a href="javascript:void(0)" onclick="showHide('block_id')" >Кликните сюда, чтобы узнать меня подробнее</a><br/><br/>
+        <div id="block_id" style="display: none;">
+            Имею диплом о высшем образование по специальности "Прикладная информатика в информационной сфере"<br/>
+            <p>
+            Последнне место работы - Челябинский региональный центр обработки данных. Администрировал виртуальную среду состоящую из более чем 100 виртуальных маших. <br/>Умею разворачивать и работать с различными дистрибутивами Linux (Debian, Ubuntu, CentOS), а так же веб-сервером Nginx.</p><br/>
+            Хочу освежить знания и получить практический опыт по веб разработке.
+        </div>
+</body>
+</html>
